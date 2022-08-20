@@ -18,7 +18,7 @@
     "lint": "tslint 'src/**/*.ts{,x}'",
     "test": "npm run lint && jest",
     "compile": "tsc -d --declarationDir ./typings",
-    "build": "rmdir /s dist && rmdir /s typings && npm run compile && prettier ./typings/**/*.d.ts --write"
+    "build": "npm run compile && prettier ./typings/**/*.d.ts --write"
   },
   "keywords": [
     "react",
